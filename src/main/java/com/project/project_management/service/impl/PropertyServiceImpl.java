@@ -44,10 +44,10 @@ public class PropertyServiceImpl implements PropertyService {
 
         if(opnEnt.isPresent()){
             PropertyEntity pe = opnEnt.get();
-            pe.setOwnerName(propertyDTO.getOwnerName());
+
             pe.setDescription(propertyDTO.getDescription());
             pe.setTitle(propertyDTO.getTitle());
-            pe.setOwnerEmail(propertyDTO.getOwnerEmail());
+
             pe.setAddress(propertyDTO.getAddress());
             pe.setPrice(propertyDTO.getPrice());
             propertyRepository.save(pe);

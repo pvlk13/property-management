@@ -16,12 +16,6 @@ public class PropertyEntity {
     @Column(name = "PROPERTY_DESCRIPTION",nullable = false)
     private String description;
 
-    @Column(name = "PROPERTY_OWNERNAME",nullable = false)
-    private String ownerName;
-
-    @Column(name = "PROPERTY_OWNEREMAIL",nullable = false)
-    private String ownerEmail;
-
     @Column(name = "PROPERTY_ADDRESS",nullable = false)
     private String address;
 
@@ -42,22 +36,6 @@ public class PropertyEntity {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getOwnerName() {
-        return ownerName;
-    }
-
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
-    }
-
-    public String getOwnerEmail() {
-        return ownerEmail;
-    }
-
-    public void setOwnerEmail(String ownerEmail) {
-        this.ownerEmail = ownerEmail;
     }
 
     public String getAddress() {

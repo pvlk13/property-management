@@ -10,19 +10,19 @@ public class PropertyConverter {
         PropertyEntity pe = new PropertyEntity();
         pe.setAddress(propertyDTO.getAddress());
         pe.setDescription(propertyDTO.getDescription());
-        pe.setOwnerEmail(propertyDTO.getOwnerEmail());
+
         pe.setPrice(propertyDTO.getPrice());
         pe.setTitle(propertyDTO.getTitle());
-        pe.setOwnerName(propertyDTO.getOwnerName());
+
         return pe;
     }
     public PropertyDTO covertEntityToDTO(PropertyEntity propertyEntity){
         PropertyDTO propertyDTO = new PropertyDTO();
         propertyDTO.setId(propertyEntity.getId());
-        propertyDTO.setOwnerName(propertyEntity.getOwnerName());
+
         propertyDTO.setPrice(propertyEntity.getPrice());
         propertyDTO.setDescription(propertyEntity.getDescription());
-        propertyDTO.setOwnerEmail(propertyEntity.getOwnerEmail());
+
         propertyDTO.setAddress(propertyEntity.getAddress());
         propertyDTO.setTitle(propertyEntity.getTitle());
         return (propertyDTO);

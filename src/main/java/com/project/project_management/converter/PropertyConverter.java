@@ -14,6 +14,7 @@ public class PropertyConverter {
         pe.setPrice(propertyDTO.getPrice());
         pe.setTitle(propertyDTO.getTitle());
 
+
         return pe;
     }
     public PropertyDTO covertEntityToDTO(PropertyEntity propertyEntity){
@@ -25,6 +26,8 @@ public class PropertyConverter {
 
         propertyDTO.setAddress(propertyEntity.getAddress());
         propertyDTO.setTitle(propertyEntity.getTitle());
+        propertyDTO.setUserId(propertyEntity.getUserEntity().getId());
+
         return (propertyDTO);
     }
 
